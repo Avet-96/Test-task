@@ -1,0 +1,49 @@
+.header_block {
+  background: #100e37;
+}
+.sign_in {
+  a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.header_links {
+  color: #f15f0f !important;
+  margin-left: 20px;
+}
+
+.header_menu_block {
+  background: #22095C;
+}
+
+.header_menu {
+   h2 {
+    font-size: 20px;
+    color: white;
+  }
+  nav {
+    ul {
+      margin-bottom: 0;
+      li {
+        list-style-type: none;
+        a {
+          cursor: pointer;
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+        }
+        &:hover {
+          transition: .3s;
+          color: #f15f0f;
+        }
+      }
+    }
+  }
+}
+
+.active_link {
+  color: #f15f0f;
+}
+

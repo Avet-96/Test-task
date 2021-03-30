@@ -1,0 +1,31 @@
+.footer_bg{
+  background: #100e37;
+  color: #fff;
+  padding: 100px 0;
+  .footer_left{
+    width: 33%;
+    .footer_logo{
+      font-size: 30px;
+    }
+    p{
+      font-size: 19px;
+    }
+    .footer_icons{
+      font-size: 30px;
+    }
+  }
+  h4{
+    color: #f15f0f;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .footer_right{
+    width: 60%;
+    a{
+      color: white;
+    }
+  }
+  .payment_method{
+    font-size: 50px;
+  }
+}

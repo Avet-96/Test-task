@@ -1,0 +1,126 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "assets/styles/header/header";
+@import "assets/styles/main/main";
+@import "assets/styles/footer/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+.menu_burger {
+  font-size: 20px;
+  color: #f15f0f;
+}
+
+.footer_container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .select_options_block .select_block {
+    width: 150px;
+  }
+  .content_blog .blog_buttons button {
+    font-size: 12px;
+  }
+  .content_bottom h2 {
+    font-size: 35px;
+  }
+  .content_bg .container .title p {
+    font-size: 18px;
+  }
+  .footer_bg .payment_method {
+    font-size: 41px;
+  }
+  .footer_bg h4 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .footer_bg {
+    padding: 50px 0;
+  }
+  .footer_bg > div {
+    flex-direction: column;
+  }
+  .footer_left {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .footer_right {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .select_options_block .select_block {
+    width: 120px;
+  }
+  .select_options_block .button_filter {
+    height: 65px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .select_options_block .select_block {
+    width: 100%;
+    padding: 3% 4%;
+  }
+  .select_options_block {
+    width: 100%;
+
+    div {
+      width: 100%;
+    }
+  }
+  .filter_button {
+    display: none;
+  }
+  .button_fil {
+    width: 100% !important;
+  }
+
+  .footer_right {
+    flex-direction: column !important;
+
+    div {
+      margin-bottom: 30px;
+    }
+  }
+  .input_block {
+    width: 90% !important;
+  }
+  .title_block {
+    width: 100% !important;
+
+  }
+  .active_modal {
+    position: inherit !important;
+    margin: 0 !important;
+    padding-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .content_blog .text-center h2 {
+    font-size: 17px;
+  }
+  .content_blog .text-center p {
+    font-size: 15px;
+  }
+  .blog_icons {
+    font-size: 12px;
+  }
+  .content_blog .blog_buttons button {
+    font-size: 10px;
+  }
+}
