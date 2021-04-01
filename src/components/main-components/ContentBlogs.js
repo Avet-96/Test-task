@@ -11,14 +11,19 @@ const ContentBlogs = (props) => {
                 <p>Тонкости за которыми кроются стабильный результат или осложнения</p>
             </div>
             <div className="blog_icons d-flex ">
-                <div className='d-flex align-items-center mr-3 '><i className="fas fa-play-circle"/><p
-                    className='m-0 ml-2'>3ч 45м
-                    50с</p>
+                <div className='d-flex align-items-center block_time mr-3 position-relative'><i
+                    className="fas fa-play-circle"/>
+                    <span className='modal_block position-absolute d-none'>каличество видео</span>
+                    <p className='m-0 ml-2'>3ч 45м 50с</p>
                 </div>
-                <div className='d-flex align-items-center mr-3 '><i className="fas fa-bars"/><p
-                    className='m-0 ml-2'>5</p>
+                <div className='d-flex align-items-center block_video mr-3 position-relative '><i
+                    className="fas fa-bars"/>
+                    <span className='modal_block position-absolute d-none'>каличество видео</span>
+                    <p className='m-0 ml-2'>5</p>
                 </div>
-                <div className='d-flex align-items-center  '><i className="fas fa-eye"/> <p className='m-0 ml-2'>30</p>
+                <div className='d-flex align-items-center block_e position-relative  '>
+                    <span className='modal_block position-absolute d-none'>каличество видео</span>
+                    <i className="fas fa-eye"/> <p className='m-0 ml-2'>30</p>
                 </div>
 
             </div>

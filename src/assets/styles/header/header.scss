@@ -1,6 +1,7 @@
 .header_block {
   background: #100e37;
 }
+
 .sign_in {
   a {
     cursor: pointer;
@@ -19,31 +20,37 @@
 }
 
 .header_menu {
-   h2 {
+  h2 {
     font-size: 20px;
     color: white;
   }
+
   nav {
     ul {
       margin-bottom: 0;
+
       li {
         list-style-type: none;
+
         a {
           cursor: pointer;
           color: white;
           text-decoration: none;
           font-size: 14px;
+
+          &:hover {
+            transition: .3s;
+            color: #f15f0f ;
+          }
         }
-        &:hover {
-          transition: .3s;
-          color: #f15f0f;
-        }
+
       }
+
     }
   }
 }
 
 .active_link {
-  color: #f15f0f;
+  color: #f15f0f !important;
 }
 

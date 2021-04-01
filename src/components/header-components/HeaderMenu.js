@@ -8,10 +8,10 @@ const HeaderMenu = () => {
                 <div className='menu_burger   d-xl-none d-block'>
                     <i className="fas fa-bars"/>
                 </div>
-                <nav className='col-7 d-none   d-xl-block'>
+                <nav className='col-7 d-none  d-xl-block'>
                     <ul className='d-flex align-items-center justify-content-between text-uppercase'>
                         <li><a href="#">О проекте</a></li>
-                        <li><a href="#" className='active_link'>Видеоматериалы</a></li>
+                        <li><a href="#" className='active_link'>Видеокурсы</a></li>
                         <li><a href="#">Мастер-Классы</a></li>
                         <li><a href="#">Лекторы</a></li>
                         <li><a href="#">FAQ</a></li>

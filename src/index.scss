@@ -43,6 +43,29 @@
   .footer_bg h4 {
     font-size: 17px;
   }
+  .clickBlock {
+
+    .select_block_one {
+      width: 120px !important;
+    }
+
+    .select_block_to {
+      width: 130px !important;
+    }
+
+    .select_block_tre {
+      width: 200px !important;
+    }
+  }
+  .select_block {
+    font-size: 14px !important;
+  }
+  .select_options_block .button_filter {
+    height: 73px !important;
+  }
+  .button_fil {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -68,18 +91,29 @@
   .select_options_block .button_filter {
     height: 65px;
   }
+  .content_bottom {
+    h2 {
+      font-size: 28px !important;
+
+    }
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  .content_bottom {
+    h2 {
+      font-size: 23px !important;
+    }
+  }
   .select_options_block .select_block {
-    width: 100%;
+    width: 100% !important;
     padding: 3% 4%;
   }
   .select_options_block {
-    width: 100%;
+    width: 100% !important;
 
     div {
-      width: 100%;
+      width: 100% !important;
     }
   }
   .filter_button {
