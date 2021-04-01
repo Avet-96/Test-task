@@ -20,24 +20,10 @@ const VideoContentTop = () => {
 
     ]
     const [menu, setOpenMenu] = useState(blocks)
-    const [ripples, setRipples] = useState([])
     const openSelect = (index) => setOpenMenu(blocks.map(list => {
         list.id === index ? list.isOpen = true : list.isOpen = false
         return list
     }))
-    const animateRipple = (e) => {
-        let el = e.target;
-        let pos = el.getBoundingClientRect();
-        let prepare = {
-            x: e.clientX - pos.left,
-            y: e.clientY - pos.top,
-            show: true
-        }
-        setRipples(prev => [...prev, prepare]);
-    }
-    const rippleEnd = (i) => {
-        ripples[i].show = false;
-    }
 
     return (
         <div>
