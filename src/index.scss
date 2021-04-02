@@ -44,7 +44,7 @@
     font-size: 17px;
   }
   .clickBlock {
-
+    position: relative;
     .select_block_one {
       width: 120px !important;
     }
@@ -141,6 +141,23 @@
     position: inherit !important;
     margin: 0 !important;
     padding-left: 12px;
+  }
+  .select_options_block .button_animation:after {
+    content: "";
+    background: #d0cccc;
+    display: block;
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 100%;
+    margin-top: -10%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  .active_select {
+    margin-left: 10px !important;
+  }
+  .checkSelect {
+    margin: 10px 0 !important;
   }
 }
 

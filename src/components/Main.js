@@ -13,7 +13,6 @@ const Main = () => {
                     <div className='position-absolute content_bg_img p-4'>
                         <img width='100%' height='100%' src={svg} alt=""/>
                     </div>
-
                 </div>
                 <div
                     className='container videos_block row d-flex m-0 flex-wrap align-items-center justify-content-center'>
