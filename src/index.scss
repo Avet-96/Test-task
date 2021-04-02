@@ -45,6 +45,7 @@
   }
   .clickBlock {
     position: relative;
+
     .select_block_one {
       width: 120px !important;
     }
@@ -99,7 +100,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   .content_bottom {
     h2 {
       font-size: 23px !important;
@@ -159,6 +160,9 @@
   .checkSelect {
     margin: 10px 0 !important;
   }
+  .block_time {
+    width: 52% !important;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -174,4 +178,5 @@
   .content_blog .blog_buttons button {
     font-size: 10px;
   }
+
 }

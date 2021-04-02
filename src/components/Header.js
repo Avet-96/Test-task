@@ -3,9 +3,7 @@ import Icon from '../assets/immages/icons/Vector.svg'
 import HeaderMenu from "./header-components/HeaderMenu";
 
 
-const Header = () => {
-    return (
-        <>
+const Header = () => <>
             <div className="header_block p-3">
                 <div className='container'>
                     <div className='d-flex justify-content-end align-items-center'>
@@ -24,7 +22,6 @@ const Header = () => {
                 <HeaderMenu/>
             </div>
         </>
-    )
-}
+
 
 export default Header

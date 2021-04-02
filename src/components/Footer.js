@@ -3,9 +3,7 @@ import imag from '../assets/immages/footer-images/Group.svg'
 import imag3 from '../assets/immages/footer-images/Group 3.svg'
 import imag2 from '../assets/immages/footer-images/imag2.svg'
 
-const Footer = () => {
-    return (
-        <footer className='footer_bg d-flex justify-content-between'>
+const Footer = () => <footer className='footer_bg d-flex justify-content-between'>
             <div className="container d-flex justify-content-between">
                 <div className='footer_left '>
                     <div className='footer_logo mb-4'>ovidas-VIVA</div>
@@ -44,8 +42,6 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-    )
-}
 
 
 export default Footer

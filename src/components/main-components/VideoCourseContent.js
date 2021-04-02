@@ -72,7 +72,6 @@ const VideoContentTop = () => {
         return list
     }))
 
-
     useEffect(() => {
         document.addEventListener("click", handleClickOutside, false);
         return () => {

@@ -1,8 +1,6 @@
 import React from 'react';
 
-const ContentBottom = () => {
-    return (
-        <div className='container '>
+const ContentBottom = () => <div className='container '>
             <h2>Хотите быть на связи </h2>
             <h2>и узнавать о новых курсах?</h2>
             <div className='d-flex flex-column flex-sm-row align-items-center justify-content-between mt-5'>
@@ -18,7 +16,6 @@ const ContentBottom = () => {
 
             </div>
         </div>
-    )
-}
+
 
 export default ContentBottom
