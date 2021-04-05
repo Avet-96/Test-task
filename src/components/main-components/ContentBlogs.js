@@ -4,7 +4,7 @@ import photto from '../../assets/immages/photto.png'
 const ContentBlogs = (props) => {
     return <div
         className={'mt-3 mr-3 content_blog d-flex flex-column pl-0 ' + 'col-12 col-sm-8 pr-0  col-md-' + props.col}>
-        <div className='images_block'><img src={photto} width='100%' height='100%' alt=""/></div>
+        <div className='images_block'><img src={photto} width='100%' height='100%' alt="a"/></div>
         <div className='pl-4 pr-4  pt-3 pb-3'>
             <div className='text-center'>
                 <h2>Имплантация в деталях</h2>
