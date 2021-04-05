@@ -20,6 +20,21 @@
   color: #f15f0f;
 }
 
+.scroll_button {
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: wheat;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 50%;
+  background: #F15F0F;
+  bottom: 5%;
+  cursor: pointer;
+  z-index: 99999;
+}
+
 .footer_container {
   max-width: 960px;
   margin: 0 auto;
@@ -30,7 +45,7 @@
     width: 150px;
   }
   .content_blog .blog_buttons button {
-    font-size: 12px;
+    font-size: 15px;
   }
   .content_bottom h2 {
     font-size: 35px;
@@ -96,8 +111,18 @@
   .content_bottom {
     h2 {
       font-size: 28px !important;
-
     }
+  }
+  .blog_buttons {
+    flex-direction: column;
+
+    button {
+      width: 100% !important;
+      margin-top: 5px;
+    }
+  }
+  .bancs_block {
+    width: 50% !important;
   }
 }
 
@@ -162,8 +187,12 @@
     margin: 10px 0 !important;
   }
   .block_time {
-    width: 52% !important;
+    width: 62% !important;
   }
+  .select_options_block .button_filter {
+    height: 56px !important;
+  }
+
 }
 
 @media only screen and (max-width: 370px) {
@@ -177,7 +206,7 @@
     font-size: 12px;
   }
   .content_blog .blog_buttons button {
-    font-size: 10px;
+    font-size: 12px;
   }
 
 }

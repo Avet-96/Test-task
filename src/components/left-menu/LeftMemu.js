@@ -5,7 +5,7 @@ const LeftMenu = (prop) => {
         <div className={prop.open ? 'position-absolute left_menu' : 'd-none'}>
             <div className='menu_header pt-4 pb-4 d-flex justify-content-between align-items-center'>
                 <h2 className='mb-0 pl-4 '>ovidas-VIVA</h2>
-                <span className='closed_menu' onClick={prop.close}>X</span>
+                <span className='closed_menu'>X</span>
             </div>
             <nav className='pl-4 pr-4'>
                 <ul className='d-flex flex-column  text-uppercase'>

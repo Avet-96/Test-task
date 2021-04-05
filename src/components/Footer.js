@@ -31,7 +31,7 @@ const Footer = () => <footer className='footer_bg d-flex justify-content-between
                         <a href="#">Пользовательское соглашение</a>
                         <a href="#">Вопросы и ответы</a>
                     </div>
-                    <div className='w-25'>
+                    <div className='bancs_block'>
                         <h4>Способ оплаты</h4>
                         <div className='payment_method d-flex justify-content-between align-items-center'>
                             <img src={imag} alt=""/>

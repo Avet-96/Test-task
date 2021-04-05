@@ -12,13 +12,11 @@ const Main = () => <>
                     <img width='100%' height='100%' src={svg} alt=""/>
                 </div>
             </div>
-            <div
-                className='container videos_block row d-flex m-0 flex-wrap align-items-center justify-content-center'>
+            <div className='container videos_block row d-flex m-0 flex-wrap align-items-center justify-content-center'>
                 <ContentBlogs col={5}/>
                 <ContentBlogs col={5}/>
                 <ContentBlogs col={5}/>
                 <ContentBlogs col={5}/>
-
             </div>
             <div className='d-flex justify-content-center mt-5 mb-3'>
                 <button className='btn lod_more'>загрузить больше</button>

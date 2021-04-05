@@ -30,7 +30,7 @@ const Header = () => {
             <HeaderMenu open={openLeftMenu}/>
         </div>
         <div className={isOpen ? 'blur' : 'd-none'} onClick={closedMenu}/>
-        <LeftMenu open={isOpen} close={closedMenu}/>
+        <LeftMenu open={isOpen}/>
     </>
 }
 

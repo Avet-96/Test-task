@@ -101,24 +101,19 @@ const VideoContentTop = () => {
                 select_options_block mt-5'
 
                 >
-                    <div className='d-flex   flex-column  flex-sm-row'>
-                        {menu.map((v) => <div className='clickBlock d-flex flex-column'
+                    <div className='d-flex flex-column flex-sm-row'>
+                        {menu.map((v) => <div className='clickBlock d-flex flex-column mb-1'
                                               key={v.id}
                                               onClick={() => openSelect(v.id)}
                         >
-                            <div
-                                className={'clickBlock select_block d-flex align-items-center justify-content-between ' + v.styles}>
-                            <span
-                                className={v.checkSelect !== '' ? 'd-block checkSelect' : 'd-none'}>{v.checkSelect}
+                            <div className={`clickBlock select_block d-flex align-items-center ${!v.isOpen || v.checkSelect? 'justify-content-between' : 'justify-content-end'} ${v.styles}`}>
+                            <span className={v.checkSelect !== '' ? 'd-block checkSelect' : 'd-none'}>{v.checkSelect}
                             </span>
-                                <span
-                                    className={!v.isActive ? 'mr-2 clickBlock' : 'active_select'}>
+                                <span className={!v.isActive ? 'mr-2 clickBlock' : 'active_select'}>
                                 {v.name}</span>
-                                <span
-                                    className={v.isOpen ? 'active_icon clickBlock span_animation' : 'clickBlock span_animation'}>
+                                <span className={v.isOpen ? 'active_icon clickBlock span_animation' : 'clickBlock span_animation'}>
                                 <i className="clickBlock fas fa-caret-right"/></span>
                             </div>
-                            {v.isOpen}
                             <div className={v.isOpen ? 'clickBlock active_modal ml-1' : 'clickBlock d-none'}>
                                 {v.data.length > 0 ? v.data.map(title => <span
                                         key={title.id}
