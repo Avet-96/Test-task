@@ -96,12 +96,10 @@ const VideoContentTop = () => {
                 <div className='position-relative
                 d-flex align-items-center
                 justify-content-center
-                flex-column
-                flex-sm-row
+             filter_block_media
                 select_options_block mt-5'
-
                 >
-                    <div className='d-flex flex-column flex-sm-row'>
+                    <div className='d-flex blocs filter_block_media'>
                         {menu.map((v) => <div className='clickBlock d-flex flex-column mb-1'
                                               key={v.id}
                                               onClick={() => openSelect(v.id)}

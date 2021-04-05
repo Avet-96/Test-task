@@ -19,7 +19,8 @@
   font-size: 20px;
   color: #f15f0f;
 }
-.button_top{
+
+.button_top {
   position: fixed;
   right: 2%;
   font-size: 20px;
@@ -31,6 +32,7 @@
   bottom: 5%;
   cursor: pointer;
 }
+
 .scroll_button {
   z-index: 99999;
   width: 50px;
@@ -50,6 +52,10 @@
 .footer_container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.content_bottom_btn {
+  color: white;
 }
 
 @media only screen and (max-width: 992px) {
@@ -136,13 +142,21 @@
   .bancs_block {
     width: 50% !important;
   }
+  .input_block {
+    .content_bottom_btn {
+      font-size: 13px;
+      padding: 0 15px;
+    }
+
+    .content_bottom_input {
+      font-size: 13px;
+    }
+  }
 }
 
-@media only screen and (max-width: 575px) {
-  .content_bottom {
-    h2 {
-      font-size: 23px !important;
-    }
+@media only screen and (max-width: 640px) {
+  .filter_block_media {
+    flex-direction: column !important;
   }
   .select_options_block .select_block {
     width: 100% !important;
@@ -161,21 +175,6 @@
   .button_fil {
     width: 100% !important;
   }
-
-  .footer_right {
-    flex-direction: column !important;
-
-    div {
-      margin-bottom: 30px;
-    }
-  }
-  .input_block {
-    width: 90% !important;
-  }
-  .title_block {
-    width: 100% !important;
-
-  }
   .active_modal {
     position: inherit !important;
     margin: 0 !important;
@@ -192,6 +191,31 @@
     opacity: 0;
     transition: all 0.8s;
   }
+}
+
+@media only screen and (max-width: 575px) {
+  .content_bottom {
+    h2 {
+      font-size: 23px !important;
+    }
+  }
+
+  .footer_right {
+    flex-direction: column !important;
+
+    div {
+      margin-bottom: 30px;
+    }
+  }
+  .input_block {
+    width: 90% !important;
+  }
+  .title_block {
+    width: 100% !important;
+
+  }
+
+
   .active_select {
     margin-left: 10px !important;
   }
@@ -204,7 +228,16 @@
   .select_options_block .button_filter {
     height: 56px !important;
   }
+  .input_block {
+    .content_bottom_btn {
+      font-size: 13px;
+      padding: 0 15px;
+    }
 
+    .content_bottom_input {
+      font-size: 13px;
+    }
+  }
 }
 
 @media only screen and (max-width: 370px) {
