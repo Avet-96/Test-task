@@ -33,6 +33,7 @@ let blocks = [
         ]
     },
 ]
+
 const VideoContentTop = () => {
     const [menu, setOpenMenu] = useState(blocks)
     const wrapperRef = useRef(null);
@@ -104,12 +105,15 @@ const VideoContentTop = () => {
                                               key={v.id}
                                               onClick={() => openSelect(v.id)}
                         >
-                            <div className={`clickBlock select_block d-flex align-items-center ${!v.isOpen || v.checkSelect? 'justify-content-between' : 'justify-content-end'} ${v.styles}`}>
+                            <div className={`clickBlock select_block d-flex align-items-center
+                             ${!v.isOpen || v.checkSelect ? 'justify-content-between'
+                                : 'justify-content-end'} ${v.styles}`}>
                             <span className={v.checkSelect !== '' ? 'd-block checkSelect' : 'd-none'}>{v.checkSelect}
                             </span>
                                 <span className={!v.isActive ? 'mr-2 clickBlock' : 'active_select'}>
                                 {v.name}</span>
-                                <span className={v.isOpen ? 'active_icon clickBlock span_animation' : 'clickBlock span_animation'}>
+                                <span
+                                    className={v.isOpen ? 'active_icon clickBlock span_animation' : 'clickBlock span_animation'}>
                                 <i className="clickBlock fas fa-caret-right"/></span>
                             </div>
                             <div className={v.isOpen ? 'clickBlock active_modal ml-1' : 'clickBlock d-none'}>
