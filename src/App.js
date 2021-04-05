@@ -10,26 +10,22 @@ class App extends Component {
         super(props);
         this.state = {transform: 0}
     }
-
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
-
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-
     handleScroll = () => {
         this.setState({
             transform: window.pageYOffset
         });
     }
 
-
     render() {
         return (
             <div>
-                {this.state.transform > 660 ? <ScrollButton/> : ''}
+                 <ScrollButton scroll={this.state.transform}/>
                 <Header/>
                 <Main/>
                 <Footer/>

@@ -19,11 +19,9 @@
   font-size: 20px;
   color: #f15f0f;
 }
-
-.scroll_button {
+.button_top{
+  position: fixed;
   right: 2%;
-  width: 50px;
-  height: 50px;
   font-size: 20px;
   color: wheat;
   text-align: center;
@@ -32,7 +30,21 @@
   background: #F15F0F;
   bottom: 5%;
   cursor: pointer;
+}
+.scroll_button {
   z-index: 99999;
+  width: 50px;
+  height: 50px;
+
+  background: #F15F0F;
+  bottom: 5%;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.remove_button {
+  position: fixed;
+  z-index: -1;
 }
 
 .footer_container {

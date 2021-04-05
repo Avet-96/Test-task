@@ -54,15 +54,23 @@
   color: #f15f0f !important;
 }
 
+.clos_menu {
+  left: -100%;
+  position: absolute;
+  transition: 1s;
+
+}
+
 .left_menu {
+  position: absolute;
   background: white;
   left: 0;
   top: 0;
   height: 100vh;
   max-width: 320px;
   width: 100%;
-  z-index: 546546565;
-  transition: 2s;
+  z-index: 1000;
+  transition: 0.5s;
 
   nav {
     line-height: 56px;
